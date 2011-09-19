@@ -69,7 +69,7 @@ Headers files for %{name}
 %dir %_kde_datadir/%srcname
 %_kde_datadir/%srcname/cmake/FindPerlMore.cmake
 %_kde_datadir/%srcname/cmake/PerlQtConfig.cmake
-%_kde_datadir/%srcname/cmake/PerlQtExport-release.cmake
+%_kde_datadir/%srcname/cmake/PerlQtExport*.cmake
 %_kde_datadir/%srcname/cmake/PerlQtExport.cmake
 %_kde_datadir/%srcname/doxsubpp.pl
 
