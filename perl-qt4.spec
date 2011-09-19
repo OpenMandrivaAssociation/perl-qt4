@@ -13,6 +13,7 @@ Source:  ftp://ftp.kde.org/pub/kde/stable/%version/src/%srcname-%version.tar.bz2
 BuildRequires: smokeqt-devel >= 1:%version
 BuildRequires: perl-devel
 BuildRequires: gdbm-devel
+BuildRequires: libdb5.1-devel
 Conflicts:     perl-kde < 1:4.6.90
 
 %description
