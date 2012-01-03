@@ -67,6 +67,7 @@ Headers files for %{name}
 %_kde_includedir/%srcname/smokeperl.h
 %_kde_includedir/%srcname/util.h
 %dir %_kde_datadir/%srcname
+%dir %_kde_datadir/%srcname/cmake
 %_kde_datadir/%srcname/cmake/FindPerlMore.cmake
 %_kde_datadir/%srcname/cmake/PerlQtConfig.cmake
 %_kde_datadir/%srcname/cmake/PerlQtExport*.cmake
