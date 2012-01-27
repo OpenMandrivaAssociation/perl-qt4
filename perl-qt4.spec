@@ -13,7 +13,7 @@ Source:  ftp://ftp.kde.org/pub/kde/stable/%version/src/%srcname-%version.tar.bz2
 BuildRequires: smokeqt-devel >= 1:%version
 BuildRequires: perl-devel
 BuildRequires: gdbm-devel
-BuildRequires: libdb5.1-devel
+BuildRequires: db-devel
 Conflicts:     perl-kde < 1:4.6.90
 
 %description
@@ -42,7 +42,7 @@ Summary: Headers files for %{name}
 Group: Development/KDE and Qt
 Requires: smokeqt-devel >= 1:%version
 Requires: perl-devel
-Requires: db4-devel
+Requires: db-devel
 Requires: gdbm-devel
 Requires: %{name} = %epoch:%version-%release
 
