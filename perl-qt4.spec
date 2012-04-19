@@ -75,7 +75,7 @@ Headers files for %{name}
 
 %prep
 %setup -q -n %srcname-%version
-%patch1 -p0
+%patch1 -p1
 
 %build
 
