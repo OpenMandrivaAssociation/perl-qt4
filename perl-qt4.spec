@@ -9,7 +9,7 @@ Group:   Development/KDE and Qt
 License: GPLv2 Artistic GPLv3 LGPLv2
 URL:     http://www.kde.org
 Source:  ftp://ftp.kde.org/pub/kde/stable/%version/src/%srcname-%version.tar.xz
-
+Patch1:	 perlqt-4.8.1-link.patch
 BuildRequires: smokeqt-devel >= 1:%version
 BuildRequires: perl-devel
 BuildRequires: db-devel
@@ -75,6 +75,8 @@ Headers files for %{name}
 
 %prep
 %setup -q -n %srcname-%version
+%patch1 -p0
+
 %build
 
 %cmake_kde4 
