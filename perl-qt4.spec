@@ -2,13 +2,13 @@
 
 Name:		perl-qt4
 Summary:	Qt bindings for Perl
-Version:	4.8.97
-Release:	1
+Version: 4.9.0
+Release: 1
 Epoch:		1
 Group:		Development/KDE and Qt
 License:	GPLv2 Artistic GPLv3 LGPLv2
 URL:		http://www.kde.org
-Source:		ftp://ftp.kde.org/pub/kde/unstable/%{version}/src/%{srcname}-%{version}.tar.xz
+Source:		ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{srcname}-%{version}.tar.xz
 Patch0:		perlqt-4.8.1-link.patch
 BuildRequires:	smokeqt-devel >= 1:%{version}
 BuildRequires:	perl-devel
