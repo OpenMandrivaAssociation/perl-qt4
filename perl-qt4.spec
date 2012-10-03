@@ -2,7 +2,7 @@
 
 Name:		perl-qt4
 Summary:	Qt bindings for Perl
-Version: 4.9.0
+Version: 4.9.2
 Release: 1
 Epoch:		1
 Group:		Development/KDE and Qt
