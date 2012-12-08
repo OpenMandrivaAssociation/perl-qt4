@@ -2,8 +2,8 @@
 
 Name:		perl-qt4
 Summary:	Qt bindings for Perl
-Version: 4.9.3
-Release: 1
+Version:	4.9.4
+Release:	1
 Epoch:		1
 Group:		Development/KDE and Qt
 License:	GPLv2 Artistic GPLv3 LGPLv2
@@ -83,4 +83,92 @@ Headers files for %{name}
 
 %install
 %makeinstall_std -C build
+
+%changelog
+* Wed Dec 05 2012 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.9.4-1
+- New version 4.9.4
+
+* Wed Nov 07 2012 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.9.3-1
+- New version 4.9.3
+
+* Thu Oct 04 2012 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.9.2-1
+- New version 4.9.2
+
+* Sat Sep 08 2012 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.9.1-1
+- New version 4.9.1
+
+* Tue Aug 14 2012 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.9.0-1
+- New version 4.9.0
+
+* Sun Jul 22 2012 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.8.97-1
+- New version 4.8.97
+
+* Sun Jul 08 2012 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.8.95-1
+- New version 4.8.95
+
+* Fri Jun 08 2012 Andrey Bondrov <bondrov@math.dvgu.ru> 1:4.8.4-69.1mib2010.2
+- New version 4.8.4
+- Add pkgconfig(qimageblitz) to BuildRequires
+- MIB (Mandriva International Backports)
+
+* Fri May 04 2012 Andrey Bondrov <bondrov@math.dvgu.ru> 1:4.8.3-69.1mib2010.2
+- New version 4.8.3
+- MIB (Mandriva International Backports)
+
+* Wed Apr 04 2012 Andrey Bondrov <bondrov@math.dvgu.ru> 1:4.8.2-69.1mib2010.2
+- New version 4.8.2
+- MIB (Mandriva International Backports)
+
+* Wed Mar 07 2012 Andrey Bondrov <bondrov@math.dvgu.ru> 1:4.8.1-69.1mib2010.2
+- New version 4.8.1
+- Add patch to fix linkage
+- MIB (Mandriva International Backports)
+
+* Mon Feb 20 2012 Andrey Bondrov <bondrov@math.dvgu.ru> 1:4.8.0-69.4mib2010.2
++ Revision: 769515
+- Backport to 2010.2 for MIB users
+- MIB (Mandriva International Backports)
+
+* Sat Jan 28 2012 Oden Eriksson <oeriksson@mandriva.com> 1:4.8.0-4
++ Revision: 769515
+- db-devel was really needed here.
+- drop bogus deps
+
+* Fri Jan 27 2012 Oden Eriksson <oeriksson@mandriva.com> 1:4.8.0-3
++ Revision: 769414
+- duh!
+- bump release
+- use the latest bdb (currently 5.2)
+
+* Sat Jan 21 2012 Oden Eriksson <oeriksson@mandriva.com> 1:4.8.0-2
++ Revision: 764137
+- rebuilt for perl-5.14.x
+
+  + Nicolas Lécureuil <nlecureuil@mandriva.com>
+    - New upstream tarball
+
+* Fri Jan 06 2012 Nicolas Lécureuil <nlecureuil@mandriva.com> 1:4.7.97-1
++ Revision: 758117
+- New upstream tarball
+
+* Tue Jan 03 2012 Nicolas Lécureuil <nlecureuil@mandriva.com> 1:4.7.95-1
++ Revision: 748771
+- Fix file list
+- New version
+
+* Wed Dec 14 2011 Nicolas Lécureuil <nlecureuil@mandriva.com> 1:4.7.90-1
++ Revision: 740825
+- New version
+
+* Mon Nov 21 2011 Nicolas Lécureuil <nlecureuil@mandriva.com> 1:4.7.80-1
++ Revision: 732106
+- New version 4.7.80
+
+* Mon Sep 19 2011 Nicolas Lécureuil <nlecureuil@mandriva.com> 1:4.7.41-1
++ Revision: 700315
+- Fix file list
+- Fix buildrequires
+- Remove unexising BR
+- Enable buildrequires
+- imported package perl-qt4
 
