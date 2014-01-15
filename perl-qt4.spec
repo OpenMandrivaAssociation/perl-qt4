@@ -1,15 +1,14 @@
 %define srcname perlqt
 
-Name:		perl-qt4
 Summary:	Qt bindings for Perl
+Name:		perl-qt4
 Version:	4.12.1
 Release:	1
 Epoch:		1
-Group:		Development/KDE and Qt
 License:	GPLv2 Artistic GPLv3 LGPLv2
-URL:		http://www.kde.org
+Group:		Development/KDE and Qt
+Url:		http://www.kde.org
 Source:		ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{srcname}-%{version}.tar.xz
-Patch0:		perlqt-4.8.1-link.patch
 BuildRequires:	smokeqt-devel >= 1:%{version}
 BuildRequires:	perl-devel
 BuildRequires:	db-devel
@@ -75,7 +74,6 @@ Headers files for %{name}
 
 %prep
 %setup -q -n %{srcname}-%{version}
-%patch0 -p1
 
 %build
 %cmake_kde4
@@ -87,6 +85,7 @@ Headers files for %{name}
 %changelog
 * Tue Jan 14 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.12.1-1
 - New version 4.12.1
+- Drop no longer needed link patch
 
 * Wed Dec 04 2013 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.11.4-1
 - New version 4.11.4
