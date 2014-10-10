@@ -3,7 +3,7 @@
 Summary:	Qt bindings for Perl
 Name:		perl-qt4
 Version:	4.14.1
-Release:	1
+Release:	2
 Epoch:		1
 License:	GPLv2 Artistic GPLv3 LGPLv2
 Group:		Development/KDE and Qt
