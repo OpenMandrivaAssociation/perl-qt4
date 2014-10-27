@@ -3,16 +3,16 @@
 Summary:	Qt bindings for Perl
 Name:		perl-qt4
 Version:	4.14.2
-Release:	1
+Release:	2
 Epoch:		1
-License:	GPLv2 Artistic GPLv3 LGPLv2
+License:	GPLv2+ Artistic GPLv3+ LGPLv2+
 Group:		Development/KDE and Qt
 Url:		http://www.kde.org
 Source:		ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{srcname}-%{version}.tar.xz
-BuildRequires:	smokeqt-devel >= 1:%{version}
-BuildRequires:	perl-devel
 BuildRequires:	db-devel
-BuildRequires:	pkgconfig(qimageblitz)
+BuildRequires:	perl-devel
+BuildRequires:	smokeqt-devel >= 1:%{version}
+BuildRequires:	pkgconfig(qimageblitz) < 5.0.0
 Conflicts:	perl-kde < 1:4.6.90
 
 %description
@@ -83,6 +83,9 @@ Headers files for %{name}
 %makeinstall_std -C build
 
 %changelog
+* Mon Oct 27 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.14.2-2
+- Use pkgconfig(qimageblitz) < 5.0.0 to force Qt4 version
+
 * Wed Oct 15 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.14.2-1
 - New version 4.14.2
 
