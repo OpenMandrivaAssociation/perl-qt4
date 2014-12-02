@@ -8,7 +8,7 @@ Epoch:		1
 License:	GPLv2+ Artistic GPLv3+ LGPLv2+
 Group:		Development/KDE and Qt
 Url:		http://www.kde.org
-Source:		ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{srcname}-%{version}.tar.xz
+Source0:	ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{srcname}-%{version}.tar.xz
 BuildRequires:	db-devel
 BuildRequires:	perl-devel
 BuildRequires:	smokeqt-devel >= 1:%{version}
@@ -76,6 +76,11 @@ Headers files for %{name}
 %setup -q -n %{srcname}-%{version}
 
 %build
+# remove it after perl-5.20 update for arm
+%ifarch %armx
+export CC=gcc
+export CXX=g++
+%endif
 %cmake_kde4
 %make
 
