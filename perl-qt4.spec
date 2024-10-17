@@ -7,7 +7,7 @@ Release:	3
 Epoch:		1
 License:	GPLv2+ Artistic GPLv3+ LGPLv2+
 Group:		Development/KDE and Qt
-Url:		http://www.kde.org
+Url:		https://www.kde.org
 Source0:	ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{srcname}-%{version}.tar.xz
 BuildRequires:	db-devel
 BuildRequires:	perl-devel
